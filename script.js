@@ -27,6 +27,7 @@ const DATA = {
 		"html" : `<p>This <a href="${repository}" target="_blank">project</a> is made for freeCodeCamp certification purposes. Eric Ray Saladar. 2025.</p>`
 	},
 
+	// incomplete, needs the d3 aspects for drawing the diagram
 	"diagram" : {
 		"container" : "main",
 		"id" : "diagram",
