@@ -1,18 +1,12 @@
-// TREE MAP DATA - json
+
 {
-	// URLs of data to fetch
 	"fetch" : {
-		// kickstarter pledges
 		"url1" : "https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/kickstarter-funding-data.json",
-		// movie sales
 		"url2" : "https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/movie-data.json",
-		// video game sales
 		"url3" : "https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/video-game-sales-data.json"
 	},
-	// storage for fetched dataset
 	"dataset" : null,
 
-	// incomplete, needs the d3 aspects for drawing the diagram
 	"diagram" : {
 		"container" : "main",
 		"id" : "diagram",
@@ -26,7 +20,7 @@
 			"tiles" : {
 				"element" : "rect",
 				"class" : "tile",
-				"colors" : null,	// at least 2 color fills
+				"colors" : null,
 				"propName" : "data-name",
 				"propCat" : "data-category",
 				"propVal" : "data-value",
@@ -38,7 +32,7 @@
 			"items" : {
 				"element" : "rect",
 				"class" : "legend-items",
-				"colors" : null,	// at least 2 color fills
+				"colors" : null,
 			}
 		},
 		"tooltip" : {
