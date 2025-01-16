@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	console.log("M A I N");
 
 	// fetch the tree map json
-	fetch('/treemap.json', { 
+	fetch('./treemap.json', { 
 		"method" : "GET",
 		"headers" : { "Accept" : "application/json" }
 	})
