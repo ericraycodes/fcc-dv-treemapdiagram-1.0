@@ -1,3 +1,7 @@
 {
-	"fetch" : "https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/kickstarter-funding-data.json"
+	"fetch" : {
+		"kickStarterPledges" : "https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/kickstarter-funding-data.json",
+		"movieSales" : "https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/movie-data.json",
+		"videoGameSales" : "https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/video-game-sales-data.json"
+	}
 }
