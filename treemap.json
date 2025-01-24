@@ -1,7 +1,51 @@
 {
+
 	"fetch" : {
 		"kickStarterPledges" : "https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/kickstarter-funding-data.json",
 		"movieSales" : "https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/movie-data.json",
 		"videoGameSales" : "https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/video-game-sales-data.json"
+	},
+
+	"heading" : {
+		"container" : "header",
+		"title" : {
+			"html" : "Heading Title",
+			"id" : "title",
+			"element" : "h1"
+		},
+		"description" : {
+			"html" : "Heading description",
+			"id" : "description",
+			"element" : "h2"
+		}
+	},
+
+	"footing" : {
+		"container" : "footer",
+		"address" : {
+			"element" : "p",
+			"about" : "This project is for freecodecamp certification purposes only.",
+			"programmer" : "Eric Ray Saladar",
+			"year" : 2025
+		},
+		"github" : {
+			"element" : "a",
+			"target" : "_blank",
+			"href" : "https://github.com/ericraycodes/fcc-dv-treemapdiagram-1.0/",
+			"content" : "GitHub"
+		}
+
+	},
+
+	"map" : {
+		"container" : "main",
+		"element" : "svg",
+		"id" : "treemap",
+		"dimension" : {
+			"height" : 500,
+			"width" : 900,
+			"pad" : null
+		}
 	}
+
 }

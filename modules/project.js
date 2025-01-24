@@ -1,12 +1,16 @@
 
 
+// Imports
+import renderMap from "./map.js";
+
+
+
+
 /** RENDER THE CONTENT OF THE PROJECT
  * 
  * 1. Act as parent script for rendering the Header, Map, and Footer contents.
  */
-
-
-export default function renderProject(Store) {
+export default function createProject(Store) {
 	console.log("R E N D E R    P R O J E C T");
 
 	// HEADER
@@ -24,6 +28,7 @@ export default function renderProject(Store) {
 	// TREE MAP
 	d3.select("body").append("main")
 		.html("The tree map diagram here.");
+	renderMap(Store);
 
 
 	// FOOTER

@@ -1,5 +1,11 @@
 
 
+// Import
+import createProject from "./project.js";
+
+
+
+
 /** MAIN MODULE LOGIC
  * 
  * 1. Load the tree map data store.
@@ -7,19 +13,11 @@
  * 3. Render the content of the project.
  * 
  */
-
-
-
-
-// Import
-import renderProject from "./project.js";
-
-
-
-
 // IIFE: Secure the local data-store and house within the dataset
 (async () => {
+
 	console.log("S T O R E    D A T A");
+
 
 	// load local data-store
 	const Store = await fetch('./treemap.json')
@@ -29,6 +27,7 @@ import renderProject from "./project.js";
 		.then(json => json)
 		.catch(err => console.error("JSON Error!", err));
 	// console.log("fetched specifications:", Store);
+
 
 	// fetch external dataset
 	Store.dataset = await Promise
@@ -45,7 +44,9 @@ import renderProject from "./project.js";
 		.catch(err => console.error("Response Error!", err));
 	console.log("fetched dataset:", Store.dataset);
 
+
 	// Proceed to render the project content
 	console.log("Store:", Store);
-	renderProject(Store);
+	createProject(Store);
+	
 }) ();
